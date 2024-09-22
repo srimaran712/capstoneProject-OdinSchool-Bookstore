@@ -11,10 +11,10 @@ const Books = () => {
 
     const fetchAll=async()=>{
       try{
-        const resbook= await axios.get('http://localhost:8080/api/books/data')
+        const resbook= await axios.get('https://backend-bookstore-gtxj.onrender.com/api/books/data')
         setBooks(resbook.data.bookdetails)
         setFilterBooks(resbook.data.bookdetails)
-        const rescategory= await axios.get('http://localhost:8080/api/category/data')
+        const rescategory= await axios.get('https://backend-bookstore-gtxj.onrender.com/api/category/data')
         setCategory(rescategory.data.category)
       }catch(error){
         console.log(error)

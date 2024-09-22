@@ -22,7 +22,7 @@ const navigate=useNavigate()
 
   const fetchUserOrders=async()=>{
           try{
-            const response = await axios.get(`http://localhost:8080/orders/${parsed_user._id}`)
+            const response = await axios.get(`https://backend-bookstore-gtxj.onrender.com/orders/${parsed_user._id}`)
             console.log(response.data.orderDetails)
             setOrderItems(response.data.orderDetails)
           }catch(error)  {

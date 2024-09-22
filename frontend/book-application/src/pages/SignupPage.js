@@ -18,7 +18,7 @@ const SignupPage = () => {
     const handleSubmit=async(e)=>{
         e.preventDefault()
         try{
-            const response= await axios.post('http://localhost:8080/api/user/add',{username,email,password,address,city,pin,mobile})
+            const response= await axios.post('https://backend-bookstore-gtxj.onrender.com/api/user/add',{username,email,password,address,city,pin,mobile})
             toast(response.data.message)
             setTimeout(()=>{
         
