@@ -19,7 +19,7 @@ const Navbar = () => {
 
     const fetchbooks= async()=>{
        try{
-        const response =await axios.get('http://localhost:8080/api/books/data')
+        const response =await axios.get('https://backend-bookstore-gtxj.onrender.com/api/books/data')
         setBooks(response.data.bookdetails)
        }catch(error){
         console.log(error)
