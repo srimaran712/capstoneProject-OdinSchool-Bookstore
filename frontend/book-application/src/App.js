@@ -27,6 +27,7 @@ function App() {
         <Route path='/success' element={<Success/>}/>
         <Route path='/cancel' element={<Cancel/>}/>
         <Route path='/orders' element={<UserOrders/>}/>
+        <Route path='/success' element={<Success/>}/>
         
      
 
