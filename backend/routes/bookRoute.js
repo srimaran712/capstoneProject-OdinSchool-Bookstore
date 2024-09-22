@@ -4,7 +4,7 @@ const {adminJWT} =require('../middlewares/adminauth')
 
 const BookRouter=Express.Router()
 
-BookRouter.post('/add',adminJWT,addBooks)
+BookRouter.post('/add',addBooks)
 
 //getting details
 BookRouter.get('/data',getBooks)
