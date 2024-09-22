@@ -13,7 +13,7 @@ const OrdersUpdate = () => {
     const handleSubmit= async(e)=>{
         e.preventDefault()
         try{
-            const response =await axios.put(`http://localhost:8080/order/${id}`,{selectedOption})
+            const response =await axios.put(`https://backend-bookstore-gtxj.onrender.com/order/${id}`,{selectedOption})
             console.log(response.data.message)
             toast(response.data.message)
         }catch(error){

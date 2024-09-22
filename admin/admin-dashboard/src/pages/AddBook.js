@@ -16,7 +16,7 @@ const AddBook = () => {
 
     const handleSubmit=async (e)=>{
         e.preventDefault()
-        const response= await axios.post('http://localhost:8080/api/books/add',{bookTitle,bookDescription,price,author,image,category})
+        const response= await axios.post('https://backend-bookstore-gtxj.onrender.com/api/books/add',{bookTitle,bookDescription,price,author,image,category})
         try{
              toast(response.data.message)
              setTimeout(()=>{
@@ -33,7 +33,7 @@ const AddBook = () => {
     }
     const fetchCategory=async()=>{
         try{
-            const response= await axios.get('http://localhost:8080/api/category/data')
+            const response= await axios.get('https://backend-bookstore-gtxj.onrender.com/api/category/data')
             setListCategory(response.data.category)
         }catch(error){
             console.log(error)

@@ -11,7 +11,7 @@ const AdminAddForm = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try{
-        const response =await axios.post('http://localhost:8080/api/admin/add',{adminname,email,password})
+        const response =await axios.post('https://backend-bookstore-gtxj.onrender.com/api/admin/add',{adminname,email,password})
         console.log(response.data.message)
     }catch(error){
         console.log(error)

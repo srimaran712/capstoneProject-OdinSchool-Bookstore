@@ -12,7 +12,7 @@ const ListBooks = () => {
 
     const fetchBooks=async()=>{
         try{
-            const response=await axios.get('http://localhost:8080/api/books/data')
+            const response=await axios.get('https://backend-bookstore-gtxj.onrender.com/api/books/data')
             console.log(response.data.bookdetails)
             setBooks(response.data.bookdetails)
         }catch(error){
@@ -29,7 +29,7 @@ const ListBooks = () => {
     const handleDelete=async (id)=>{
   
        try{
-        const response= await axios.delete(`http://localhost:8080/api/books/delete/${id}`)
+        const response= await axios.delete(`https://backend-bookstore-gtxj.onrender.com/api/books/delete/${id}`)
         toast(response.data.message)
        }catch(error){
          toast(error)

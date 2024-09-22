@@ -9,7 +9,7 @@ const LoginPage = () => {
     const handleLogin=async(e)=>{
         e.preventDefault()
         try{
-            const response =await axios.post('http://localhost:8080/api/admin/login',{email,password})
+            const response =await axios.post('https://backend-bookstore-gtxj.onrender.com/api/admin/login',{email,password})
             const {adminToken} =response.data
           
             localStorage.setItem('admin',adminToken)

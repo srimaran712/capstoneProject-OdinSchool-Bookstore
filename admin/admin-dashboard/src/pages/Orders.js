@@ -8,7 +8,7 @@ const Orders = () => {
 
   const fetchOrders=async()=>{
     try{
-      const response= await axios.get('http://localhost:8080/orders/data')
+      const response= await axios.get('https://backend-bookstore-gtxj.onrender.com/orders/data')
       console.log(response.data.Orders)
       setOrders(response.data.Orders)
     

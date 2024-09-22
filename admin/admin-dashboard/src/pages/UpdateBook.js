@@ -18,7 +18,7 @@ const UpdateBook = () => {
 
     const updateBook=async(id)=>{
        try{
-        const response= await axios.put(`http://localhost:8080/api/books/update/${id}`,{
+        const response= await axios.put(`https://backend-bookstore-gtxj.onrender.com/api/books/update/${id}`,{
             title,
             description,
             price,

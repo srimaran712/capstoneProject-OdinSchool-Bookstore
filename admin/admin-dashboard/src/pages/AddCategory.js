@@ -10,7 +10,7 @@ const AddCategory = () => {
     const handleSubmit=async(e)=>{
         e.preventDefault()
         try{
-            const response =await axios.post('http://localhost:8080/api/category/add',{categoryName})
+            const response =await axios.post('https://backend-bookstore-gtxj.onrender.com/api/category/add',{categoryName})
             setTimeout(()=>{
                 setCategoryName('')
             },2000 )
