@@ -1,0 +1,1 @@
+## Full stack application with help of MERN tech a book E-commerce application where users can purchase their books by favorite category and they can view the book details with cart and stripe payment feature
