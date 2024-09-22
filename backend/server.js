@@ -24,6 +24,7 @@ const app=Express()
 
 app.use(Cors({
     origin:'*',
+    credentials: true
 }))
 app.use(bodyParser.json())
 
