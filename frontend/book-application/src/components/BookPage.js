@@ -42,7 +42,7 @@ useEffect(() => {
         </div> 
           <h1 className="text-2xl font-bold">{individualBook.title}</h1>
           <p className="text-gray-600 mt-2">Author: {individualBook.author}</p>
-          <p className="text-gray-700 font-medium">Price: ₹ {individualBook.price}</p>
+          <p className="text-gray-700 font-medium">Price: $ {individualBook.price}</p>
           <div className="mt-5"> <NavLink to='/' className="md:mt-2 py-2 px-4 font-medium text-medium bg-primary-color text-white">Back to Home</NavLink></div>
          
           
