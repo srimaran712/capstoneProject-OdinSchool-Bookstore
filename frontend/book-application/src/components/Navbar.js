@@ -133,42 +133,7 @@ const Navbar = () => {
       
     </div>
 
-    {/* Mobile Menu (for small screens) */}
-    {isOpen && (
-      <div className="md:hidden mt-4">
-        <NavLink
-          to="/"
-          className="block py-2 px-4 text-gray-700 hover:bg-blue-50"
-          onClick={() => setIsOpen(false)}
-        >
-          Home
-        </NavLink>
-        <NavLink
-          to="/cart"
-          className="block py-2 px-4 text-gray-700 hover:bg-blue-50"
-          onClick={() => setIsOpen(false)}
-        >
-          Cart
-        </NavLink>
-        <NavLink
-          to="/orders"
-          className="block py-2 px-4 text-gray-700 hover:bg-blue-50"
-          onClick={() => setIsOpen(false)}
-        >
-          Orders
-        </NavLink>
-       
-
-        <NavLink
-          to="/login"
-          className="block py-2 px-4 text-white bg-primary-color hover:bg-primary-dark rounded-md mt-2"
-          onClick={() => setIsOpen(false)}
-        >
-          Login
-        </NavLink>
-        
-      </div>
-    )}
+    
   </div>
   )
 }
