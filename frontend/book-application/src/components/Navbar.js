@@ -100,7 +100,7 @@ const Navbar = () => {
     </div>
 
     {/* Navbar Links */}
-    <nav className={`md:flex md:items-center space-x-10 ${isOpen ? 'block' : 'hidden'} md:block`}>
+    <nav className={`hidden md:flex md:items-center space-x-10 ${isOpen ? 'block' : 'hidden'} md:block`}>
       <NavLink className="flex items-center gap-2 py-2 hover:text-primary-color" to="/">
         <CiHome className="text-lg" /> <span>Home</span>
       </NavLink>
