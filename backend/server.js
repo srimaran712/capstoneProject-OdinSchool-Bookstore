@@ -39,7 +39,7 @@ app.use('/api/admin',adminRouter)
 app.post('/create-checkout-session', async (req, res) => {
 
     const {items,user,totalPrice}=req.body
-    console.log(user._id)
+   
     const lineItems=items.map((item)=>({
         price_data:{
             currency:"usd",
